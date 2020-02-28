@@ -1,0 +1,6 @@
+services:
+  - docker
+
+script:
+  - docker image build -t cfinch/blatest .
+  - docker container run cfinch/blatest
